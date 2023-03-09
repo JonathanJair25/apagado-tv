@@ -133,26 +133,3 @@ print(deshabilitar)
 encontrar = encontrarIps(localidad +'.txt')
 #funcion 'conTelnet'
 apagadoTv = conTelnet('root', 'root626', encontrarIps)
-
-'''
-    user = input('Ingrese su usurio: ')
-    pw = getpass('Ingrese su password: ')
-    ip = input('Ingrese la ip del router: ')
-
-    try:
-        ssh = paramiko.SSHClient()
-        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(ip, username = user, password = pw)
-        
-        stdin, stdout, stderr = ssh.exec_command('ip firewall address-list export')
-        time.sleep(2)
-        rsc_content = stdout.read().decode()
-        
-        ssh.close()
-        with open('filenew.txt', 'w') as f:
-            f.write(rsc_content)
-            
-    except paramiko.ssh_exception.AuthenticationException as e:
-        print('Autenticacion fallida')
-        
-'''
