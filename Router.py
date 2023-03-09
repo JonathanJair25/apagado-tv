@@ -4,7 +4,7 @@ from getpass import getpass
 import time
 import socket
 import re
-esto es una orueba
+
 #funcion para conectar al router y lanzar comando export por ssh
 def accesoRouter(ip, user, pw):
     try:
