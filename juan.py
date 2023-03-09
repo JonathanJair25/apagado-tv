@@ -236,7 +236,7 @@ def ejecutar():
 
 
 ventana = tk.Tk()
-ventana.title("Interfaz")
+ventana.title("Frabecorp apagado TV")
 
 etiqueta_localidad = tk.Label(ventana, text="Localidad:")
 etiqueta_localidad.pack()
