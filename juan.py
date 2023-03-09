@@ -51,17 +51,24 @@ def disableIps(ip, user, pw):
         
         if stderr.channel.recv_exit_status() != 0:
             print("Ocurrió un error al ejecutar el comando:", error)
+            return error
         else:
             print("Comando ejecutado con éxito: \n", salida)
+            return salida
         
     except paramiko.ssh_exception.AuthenticationException as e:
         print('Autenticacion fallida')
+        return str(e)
     except socket.timeout as e:
         print("Error de Timeout: No se pudo establecer una conexión con el router en el tiempo especificado.")
+        return str(e)
     except socket.error as e:
         print("Error de conexión: No se pudo establecer una conexión con el router. Verifique la dirección IP.")
+        return str(e)
     except Exception as e:
         print(f"Error desconocido: {e}")
+        return str(e)
+
         
 #***** Buscar las ips del firewall segun el rango establecido ***** ### ¡¡¡Uso de expresiones regulares!!!! ###
 def encontrarIps(localidad):
@@ -208,7 +215,7 @@ def enableIps(ip, user, pw):
     
 
 def ejecutar():
-    # Obtener los valores ingresados en los widgets de entrada
+    # Obtener los valores de los widgets
     localidad = entrada_localidad.get()
     ip = entrada_ip.get()
     user = entrada_user.get()
@@ -218,11 +225,15 @@ def ejecutar():
     datos = accesoRouter(ip, user, pw)
     guardarArchivo(datos, localidad + '.txt')
     deshabilitar = disableIps(ip, user, pw)
-    console.insert(tk.END, deshabilitar + '\n')
+    console.insert(tk.END, f"{deshabilitar or ''}\n") # verificar si deshabilitar es None
+
     encontrar = encontrarIps(localidad + '.txt')
     apagadoTv = conTelnet('root', 'root626', 'rootuser', '77553311', encontrar)
     habilitar = enableIps(ip, user, pw)
-    console.insert(tk.END, habilitar + '\n')
+    
+    # Actualizar la pantalla
+    ventana.update()
+
 
 ventana = tk.Tk()
 ventana.title("Interfaz")

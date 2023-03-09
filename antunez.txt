@@ -1,0 +1,1681 @@
+# mar/09/2023 12:03:23 by RouterOS 6.49.7
+# software id = N4WQ-2YDP
+#
+# model = CCR1036-8G-2S+
+# serial number = 742C0756424A
+/ip firewall address-list
+add address=10.10.0.76 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.64 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.209 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.233 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.193 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.77 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.100 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.140 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.49 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.74 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.1.174 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.243 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.169 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.198 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.94 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.119 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.1.230 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.226 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.137 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.1.103 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.129 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.129 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.147 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.108 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.9 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.131 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.5.171 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.69 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.233 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.114 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.6 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.57.220 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.20.76 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.139 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.20.102 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.28 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.57.249 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.158 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.57.74 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.61 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.212 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.94 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.9.117 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.115 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.233 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.35 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.40 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.80.33 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.215 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.72.6 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.52 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.28 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.222 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.20.168 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.14.50 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.129 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.20.129 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.19 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.22.28 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.114 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.8.73 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.68 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.70.39 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.85 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.102 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.59.172 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.160 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.173 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.72.44 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.166 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.197 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.59.234 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.59.242 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.72.49 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.231 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.51 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.36 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.11 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.110 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.45 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.17 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.232 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.5.176 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.111 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.49 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.184 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.11 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.27 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.149 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.174 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.55 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.72 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.218 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.182 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.20.117 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.118 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.16 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.149 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.32 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.241 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.209 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.194 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.159 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.57 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.58 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.209 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.190 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.178 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.158 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.161 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.149 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.166 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.65 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.69 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=192.168.1.1 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.11 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.59.97 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.36 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.43 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.24 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.70.117 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.49 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.127 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.87 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.56 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.174 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.65 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.70.119 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.77 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.81 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.181 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.248 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.245 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.92 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.28.32 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.82 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.22 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.133 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.215 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.40 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.121 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.19 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.124 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.130 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.80.207 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.130 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.125 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.14 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.93 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.103.6 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.115 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.248 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.162 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.117 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.33 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.89 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.20 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.116 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.191 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.97 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.180 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.157 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.244 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.12.184 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.218 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.188 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.206 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.192 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.214 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.199 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.223 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.59.122 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.93 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.239 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.95 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.70.148 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.225 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.98 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.143 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.173 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.26 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.199 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.67.130 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.40 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.45 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.112 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.96 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.135 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.61 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.102 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.66 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.79 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.14 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.78 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.67.135 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.82 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.151 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.187 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.230 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.103 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.16 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.152 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.105 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.151 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.102 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.27 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.28 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.194 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.34 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.164 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.70.151 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.120 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.147 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.149 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.55 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.25 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.81 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.70 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.76 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.30 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.157 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.224 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.95 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.163 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.155 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.167 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.109 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.132 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.117 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.184 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.82.29 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.191 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.118 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.142 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.21 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.156 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.67.144 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.165 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.167 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.197 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.180 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.216 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.135 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.108 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.59.128 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.91 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.188 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.169 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.223 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.76 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.226 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.227 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.1 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.9 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.221 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.243 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.211 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.223 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.110 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.80 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.71 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.81 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.199 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.80 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.160 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.90 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.14 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.82.80 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.35 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.42.236 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.104.27 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.104.26 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.104.29 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.184 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.36 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.65 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.94 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.98 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.72.122 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.123 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.241 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.90 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.38 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.71 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.24.20 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.57 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.82.97 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.167 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.49 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.244 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.5.119 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.69 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.40 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.8.36 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.114 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.53 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.56 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.69.8 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.12.22 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.250 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.249 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.139 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.84 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.230 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.61 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.88 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.128 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.121 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.129 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.130 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.116 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.100 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.63 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.90 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.78 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.37 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.129 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.92 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.221 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=192.168.88.71 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.95 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.82.126 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.23.116 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.100 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.214 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.186 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.87 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.72 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.73 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.236 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.30.83 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.23.122 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.23.121 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.204 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.70.95 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.47 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.49 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.103.10 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.29.10 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.108 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.82.134 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.97.20 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.72 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.141 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.29.19 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.69 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.21 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.19 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.139 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.156 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.158 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.97.35 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.92 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.161 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.162 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.160 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.159 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.55 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.100 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.102 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.71 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.57 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.242 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.97.43 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.82.167 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.35 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.111 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.135 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.114 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.110.16 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.110.17 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.72.24 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.30.121 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.93 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.134 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.118 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.127 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.202 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.209 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.35 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.48 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.30.126 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.36 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.108 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.68 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.42.230 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.58 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.188 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.42.214 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.200 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.108.30 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.58 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.110 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.115 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.12.191 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.31 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.107 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.80.171 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.35 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.49 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.137 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.235 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.179 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.70.107 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.156 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.247 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.128 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.75 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.23 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.66 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.150 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.64.14 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.199 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.39 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.41 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.135 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.136 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.208 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.174 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.107 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.172 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.249 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.183 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.23.157 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.82.37 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.60 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.72 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.101 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.67.150 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.120 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.48 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.91.19 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.108 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.67.155 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.24 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.166 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.153 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.63 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.31 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.18.9 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.18.13 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.180 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.205 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.67.166 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.39 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.67.167 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.18.53 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.97.68 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.42.204 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.161 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.9 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.68 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.28.39 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.203 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.52 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.22 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.63 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.143 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.151 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.86 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.212 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.219 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.183 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.98.21 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.215 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.13 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.54 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.65 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.90 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.91 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.95 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.104 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.104 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.128 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.198 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.154 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.224 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.28.36 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.28.194 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.109 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.83 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.139 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.133 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.124 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.70 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.57.140 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.9.131 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.222 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.239 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.157 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.5.178 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.9 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.69 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.67 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.153 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.34 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.72.60 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.89 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.19 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.249 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.72.58 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.214 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.14.186 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.40 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.12.253 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.189 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.70.97 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.171 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.12.81 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.80 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.65 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.214 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.228 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.204 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.217 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.59 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.59.85 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.65 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.22.89 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.47 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.103 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.164 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.115 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.100 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.45 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.227 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.74.9 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.23.166 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.227 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.82.74 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.118 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.52 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.118 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.229 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.157 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.14.172 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.51 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.80.73 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.23.248 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.186 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.1.160 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.203 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.104 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.214 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.130 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.242 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.3.73 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.63 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.238 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.14.59 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.97.87 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.230 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.82.246 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.63.36 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.12.224 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.57.53 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.5.195 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.137 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.34 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.36 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.41 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.85 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.136 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.52 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.28 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.39 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.104.49 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.6 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.104.86 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.120 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.221 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.103 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.115 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.190 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.30.138 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.1.75 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.72 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.137 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.30.147 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.99.57 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.98.64 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.99.60 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.216 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.203 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.115 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.61 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.51.6 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.176 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.87 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.57 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.166 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.29 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.120.32 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.21 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.178 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.57.204 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.105 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.63.9 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.79 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.28.147 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.100 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.126 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.159 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.143 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.12.95 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.12.186 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.28 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.113 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.224 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.24.49 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.8.58 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.186 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.2.5 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.5.23 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.48 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.59.11 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.68.15 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.13.200 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.80.57 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.80.69 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.80.70 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.14.43 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.118 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.74 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.102 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.132 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.14.133 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.20.201 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.18 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.80.108 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.146 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.9.127 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.157 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.80.167 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.176 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.224 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.74.86 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.77 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.135 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.154 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.94 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.128 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.11 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.40.142 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.192 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.168 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.109 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.118 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.132 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.241 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.131 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.171 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.168 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.179 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.72.79 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.112 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.148 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.64.35 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.218 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.190 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.187 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.42.249 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.90.100 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.247 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.8.51 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.175 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.12.164 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.86 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.59.131 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.132 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.13 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.244 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.243 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.64.78 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.185 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.135 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.184 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.176 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.28 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.82.132 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.242 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.34 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.45 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.11 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.39 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.114 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.97 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.81.212 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.212 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.1.28 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.83 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.42.223 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.97.66 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.80 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.41.205 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.80.190 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.7.104 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.14.216 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.165 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.18.84 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.174 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.42.195 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.182 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.18.123 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.229 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.63.21 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.66.197 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.215 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.18.138 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.63.39 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.235 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.63 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.4.183 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.233 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.186 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.14.124 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.122 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.59.116 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.18.198 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.1.87 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.58.165 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.99 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.15.173 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.42.112 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.96.197 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.175 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.63.87 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.18.231 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.18.232 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.21.230 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.88.78 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.68 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.182 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.222 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.19 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.119 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.102 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.206 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.242 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.143 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.173 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.21 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.196 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.57 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.28.135 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.33.102 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.37 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.131 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.177 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.85 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.200 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.241 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.14 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.30 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.48 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.73 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.99.42 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.99.46 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.76 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.118 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.0.34 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.52 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.142 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.154 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.112 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.121 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.123 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.132 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.98.62 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.65 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.151 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.140 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.154 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.237 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.211 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.50.238 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.150 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.158 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.70 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.84 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.88 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.167 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.168 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.170 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.90 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.171 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.215 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.110.24 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.104.159 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.104.162 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.96 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.97 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.32.234 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.51.8 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.34.144 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.99.71 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.51.16 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.147 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.118.21 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.51.28 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.187 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.51.31 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.79.104 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.29.104 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.48.129 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.144 disabled=yes list=BLOCKED_USERS
+add address=10.10.81.86 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.18.253 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.24.76 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.28.225 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.164 disabled=yes list=BLOCKED_USERS
+add address=10.10.8.14 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.5.212 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.5.94 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.89.62 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.16.114 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.23.224 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.100 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.61.14 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.60.132 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.49.229 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.12 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.72.121 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.17.218 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.51 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.199 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.76.225 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.204 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.135 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.62.230 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.63.29 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.175 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.108.88 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.28.242 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.5.63 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.14.206 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.56.181 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.6.6 comment=ucrm_blocked_users disabled=yes list=\
+    BLOCKED_USERS
+add address=10.10.77.164 comment=ucrm_blocked_users list=BLOCKED_USERS
