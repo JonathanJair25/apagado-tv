@@ -1,20 +1,20 @@
-import tkinter as tk
 import paramiko
+import telnetlib
 from getpass import getpass
 import time
 import socket
 import re
-import telnetlib
+import tkinter as tk
 
-# función para conectar al router y lanzar comando export por ssh
+#funcion para conectar al router y lanzar comando export por ssh
 def accesoRouter(ip, user, pw):
     try:
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(ip, username = user, password = pw, timeout=5)
+        ssh.connect(ip, username = user, password = pw, timeout=3)
         
         stdin, stdout, stderr = ssh.exec_command('ip firewall address-list export')
-        time.sleep(2)
+        time.sleep(1)
         rsc_content = stdout.read().decode()
         
         ssh.close()
@@ -30,20 +30,20 @@ def accesoRouter(ip, user, pw):
         
     return rsc_content
 
-# función para guardar el .rsc en un archivo .txt
+#funcion para guardar el .rsc en un archivo .txt
 def guardarArchivo(rsc_content, leerIp):
     with open(leerIp, 'w') as f:
         f.write(rsc_content)
 
-# función para lanzar comando disable a la address-list
+#funcion para lanzar comando disable a la address-list
 def disableIps(ip, user, pw):
     try:
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh.connect(ip, username = user, password = pw, timeout=5)
         
-        stdin, stdout, stderr = ssh.exec_command('ip address print')
-        time.sleep(2)
+        stdin, stdout, stderr = ssh.exec_command('ip firewall address-list disable [find list="BLOCKED_USERS"]')
+        time.sleep(1)
         salida = stdout.read().decode()
         error = stderr.read().decode()
         
@@ -51,18 +51,25 @@ def disableIps(ip, user, pw):
         
         if stderr.channel.recv_exit_status() != 0:
             print("Ocurrió un error al ejecutar el comando:", error)
+            return error
         else:
             print("Comando ejecutado con éxito: \n", salida)
+            return salida
         
     except paramiko.ssh_exception.AuthenticationException as e:
         print('Autenticacion fallida')
+        return str(e)
     except socket.timeout as e:
         print("Error de Timeout: No se pudo establecer una conexión con el router en el tiempo especificado.")
+        return str(e)
     except socket.error as e:
         print("Error de conexión: No se pudo establecer una conexión con el router. Verifique la dirección IP.")
+        return str(e)
     except Exception as e:
         print(f"Error desconocido: {e}")
+        return str(e)
 
+        
 #***** Buscar las ips del firewall segun el rango establecido ***** ### ¡¡¡Uso de expresiones regulares!!!! ###
 def encontrarIps(localidad):
     # Abrir el archivo en modo lectura
@@ -82,7 +89,7 @@ def encontrarIps(localidad):
             parts = ip.split(".")
 
             # Parametros de busqueda (establece un rango para las ips)
-            if int(parts[0]) == 10 and int(parts[1]) == 10 and int(parts[2]) >= 76 and int(parts[2]) <= 77 and int(parts[3]) >= 10 and int (parts[3]) <=254:
+            if int(parts[0]) == 10 and int(parts[1]) == 10 and int(parts[2]) >= 76 and int(parts[2]) <= 79 and int(parts[3]) >= 1 and int (parts[3]) <=254:
                 # Agregar la dirección IP a la lista de direcciones filtradas
                 filtered_ips.append(ip)
 
@@ -90,69 +97,179 @@ def encontrarIps(localidad):
     print(f"Se encontraron {len(filtered_ips)} direcciones IP en el rango especificado: {filtered_ips}")
     return filtered_ips
 
-# Conexion a telnet y apagado de tv
-def conTelnet (user, password, Host):
+#Conexion a telnet y apagado de tv
+def conTelnet (user, password, guser, gpassword, Host):
     indice = 0
     longitud = len(Host)
+    fibrastor = 'Device Model  :   RO 015FT'
+    onuDescartada = 'Login incorrect'
+    gpon = ""
 
     while indice < longitud:
         if indice < longitud:
             ip = Host[indice]
-            conexion = telnetlib.Telnet(ip)
-            conexion.read_until(b"login: ", timeout=5)
-            conexion.write(user.encode('ascii') + b'\n')
-            time.sleep(2)
-            if password:
-                conexion.read_until(b"Password: ", timeout=5)
-                conexion.write(password.encode('ascii') + b"\n")
-                time.sleep(2)
-            conexion.write(b"ls\n")
-            conexion.write(b"exit\n")
-            
-            print(conexion.read_all().decode('ascii'))
-            print(f'Se ejecuto correctamente el comando a la ip {ip}')
-            indice += 1
+            try:
+                conexion = telnetlib.Telnet(ip)
+                try:
+                    equipo = str(conexion.read_until(b"Device Model  :   RO 015FT", timeout=2))
+                    if fibrastor in equipo:
+                        conexion.read_until(b"login: ", timeout=2)
+                        conexion.write(user.encode('ascii') + b'\n')
+                        time.sleep(2)
+                        if password:
+                            conexion.read_until(b"Password: ", timeout=2)
+                            conexion.write(password.encode('ascii') + b"\n")
+                            time.sleep(2)
+                        equipo2 = str(conexion.read_until(b"Login incorrect", timeout=2))
+                        conexion.write(b"flash set CATV_ENABLED 0\n")
+                        conexion.write(b"exit\n")
+                        print(conexion.read_all().decode('ascii'))
+                        print(f'Se ejecuto correctamente el comando a la ip {ip}, son {longitud} ips y va en la {indice}')
+                        print(f'***************Equipo # {indice}***************')
+                    else:
+                        print(f'La ip {ip}, no es un equipo Fibrastore\n')
+                        
+                        
+                        
+
+                    equipo = str(conexion.read_until(b"", timeout=2))
+                    if gpon in equipo:
+                        conexion.read_until(b"login: ", timeout=2)
+                        conexion.write(guser.encode('ascii') + b'\n')
+                        time.sleep(2)
+                        if password:
+                            conexion.read_until(b"Password: ", timeout=2)
+                            conexion.write(gpassword.encode('ascii') + b"\n")
+                            time.sleep(2)
+                        conexion.write(b"flash set OLT_CATV_ENABLE 2\n")
+                        conexion.write(b"flash set WEB_CATV_ENABLE 2\n")
+                        conexion.write(b"flash set GLOBAL_CATV_ENABLE 1\n")
+                        time.sleep(1)
+                        conexion.write(b"reboot\n")
+                        print(conexion.read_all().decode('ascii'))
+                        print(f'Se ejecuto correctamente el comando a la ip {ip}, son {longitud} ips y va en la {indice}')
+                        print(f'***************Equipo # {indice}***************')
+                except EOFError as e:
+                    print("Error: la conexión Telnet ha sido cerrada por el host remoto:", e)
+                finally:
+                    conexion.close()
+                
+            except socket.timeout as e:
+                print(f'Error de Timeout: Verifique su conexión a Internet y que la ip {ip} sea válida, son {longitud} ips y va en la {indice}')
+                print(f'***************Equipo # {indice}***************')
+            except socket.error as e:
+                print('Error de Conexion:', e)
+                conexion = telnetlib.Telnet(ip)
+                try:
+                    conexion.read_until(b"login: ", timeout=2)
+                    conexion.write(user.encode('ascii') + b'\n')
+                    time.sleep(2)
+                    if password:
+                        conexion.read_until(b"Password: ", timeout=2)
+                        conexion.write(password.encode('ascii') + b"\n")
+                        time.sleep(2)
+                    equipo2 = str(conexion.read_until(b"Login incorrect", timeout=2))
+                    if onuDescartada not in equipo2:
+                        conexion.write(b"flash set CATV_ENABLED 0\n")
+                        conexion.write(b"exit\n")
+                        print(conexion.read_all().decode('ascii'))
+                        print(f'Se ejecuto correctamente el comando a la ip {ip}, son {longitud} ips y va en la {indice}')
+                        print(f'***************Equipo # {indice}***************')
+                        conexion.close()
+                except socket.error as e:
+                    print('error: ', e)
+        
         else:
-            print(f'ocurrio un error con la ip {ip}')
+            print('ocurrio un error de programacion')
+        indice += 1
+    print(f'\nFinalizó el apagado de tv en esta localidad fueron en total {indice} ips')
 
-# función que se ejecuta cuando se presiona el botón
-def on_button_press():
-    ip = ip_entry.get()
-    user = user_entry.get()
-    pw = pw_entry.get()
+
+#funcion enable al router
+def enableIps(ip, user, pw):
+    try:
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(ip, username = user, password = pw, timeout=5)
+        
+        stdin, stdout, stderr = ssh.exec_command('ip firewall address-list enable [find list="BLOCKED_USERS"]')
+        time.sleep(2)
+        salida = stdout.read().decode()
+        error = stderr.read().decode()
+        
+        ssh.close()
+        
+        if stderr.channel.recv_exit_status() != 0:
+            print("Ocurrió un error al ejecutar el comando:", error)
+        else:
+            print("Comando ejecutado con éxito: \n", salida)
+        
+    except paramiko.ssh_exception.AuthenticationException as e:
+        print('Autenticacion fallida')
+    except socket.timeout as e:
+        print("Error de Timeout: No se pudo establecer una conexión con el router en el tiempo especificado.")
+    except socket.error as e:
+        print("Error de conexión: No se pudo establecer una conexión con el router. Verifique la dirección IP.")
+    except Exception as e:
+        print(f"Error desconocido: {e}")
+    
+
+def ejecutar():
+    # Obtener los valores de los widgets
+    localidad = entrada_localidad.get()
+    ip = entrada_ip.get()
+    user = entrada_user.get()
+    pw = entrada_pw.get()
+
+    # Ejecutar el código principal
     datos = accesoRouter(ip, user, pw)
-    guardarArchivo(datos, localidad_entry.get() + '.txt')
+    guardarArchivo(datos, localidad + '.txt')
     deshabilitar = disableIps(ip, user, pw)
-    encontrar = encontrarIps(localidad_entry.get() + '.txt')
-    apagadoTv = conTelnet('root', 'root626', encontrar)
+    console.insert(tk.END, f"{deshabilitar or ''}\n") # verificar si deshabilitar es None
 
-# crear la ventana
-root = tk.Tk()
-root.title("Mi aplicación")
+    encontrar = encontrarIps(localidad + '.txt')
+    apagadoTv = conTelnet('root', 'root626', 'rootuser', '77553311', encontrar)
+    habilitar = enableIps(ip, user, pw)
+    
+    # Actualizar la pantalla
+    ventana.update()
 
-# agregar los elementos visuales
-ip_label = tk.Label(root, text="IP del router:")
-ip_label.pack()
-ip_entry = tk.Entry(root)
-ip_entry.pack()
 
-user_label = tk.Label(root, text="Usuario:")
-user_label.pack()
-user_entry = tk.Entry(root)
-user_entry.pack()
+ventana = tk.Tk()
+ventana.title("Frabecorp apagado TV")
 
-pw_label = tk.Label(root, text="Contraseña:")
-pw_label.pack()
-pw_entry = tk.Entry(root, show="*")
-pw_entry.pack()
+# Definir la lista de localidades
+localidades = ["Antunez", "Charapan", "Paracho"]
 
-localidad_label = tk.Label(root, text="Localidad:")
-localidad_label.pack()
-localidad_entry = tk.Entry(root)
-localidad_entry.pack()
+# Definir la variable para almacenar la opción seleccionada en la lista
+opcion_seleccionada = tk.StringVar()
 
-button = tk.Button(root, text="Ejecutar", command=on_button_press)
-button.pack()
+etiqueta_localidad = tk.Label(ventana, text="Localidad:")
+etiqueta_localidad.pack()
 
-# iniciar la aplicación
-root.mainloop()
+# Crear la lista desplegable con las opciones de localidades
+menu_localidades = tk.OptionMenu(ventana, opcion_seleccionada, *localidades)
+menu_localidades.pack()
+
+etiqueta_ip = tk.Label(ventana, text="IP del router:")
+etiqueta_ip.pack()
+entrada_ip = tk.Entry(ventana)
+entrada_ip.pack()
+
+etiqueta_user = tk.Label(ventana, text="Usuario:")
+etiqueta_user.pack()
+entrada_user = tk.Entry(ventana)
+entrada_user.pack()
+
+etiqueta_pw = tk.Label(ventana, text="Contraseña:")
+etiqueta_pw.pack()
+entrada_pw = tk.Entry(ventana, show="*")
+entrada_pw.pack()
+
+boton_ejecutar = tk.Button(ventana, text="Ejecutar", command=ejecutar)
+boton_ejecutar.pack()
+
+console = tk.Text(ventana)
+console.pack()
+
+ventana.mainloop()
