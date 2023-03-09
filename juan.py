@@ -82,7 +82,7 @@ def encontrarIps(localidad):
             parts = ip.split(".")
 
             # Parametros de busqueda (establece un rango para las ips)
-            if int(parts[0]) == 10 and int(parts[1]) == 10 and int(parts[2]) >= 32 and int(parts[2]) <= 39 and int(parts[3]) >= 1 and int (parts[3]) <=254:
+            if int(parts[0]) == 10 and int(parts[1]) == 10 and int(parts[2]) >= 76 and int(parts[2]) <= 79 and int(parts[3]) >= 1 and int (parts[3]) <=254:
                 # Agregar la dirección IP a la lista de direcciones filtradas
                 filtered_ips.append(ip)
 
